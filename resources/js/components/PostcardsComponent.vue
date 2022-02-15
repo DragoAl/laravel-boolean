@@ -1,5 +1,5 @@
 <template>
-   <div :v-for="postcard in postcards" :key="postcard.id">
+   <div v-for="postcard in postcards" :key="postcard.id">
        <h2>Sender:{{$postcard.sender}}</h2>
    </div>
 </template>
