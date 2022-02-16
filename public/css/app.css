@@ -10962,3 +10962,12 @@ a.text-dark:focus {
   }
 }
 
+.container {
+  width: 60%;
+}
+
+.container form,
+.container h2 {
+  text-align: center;
+}
+

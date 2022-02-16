@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GuestController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,5 +21,7 @@ use Illuminate\Support\Facades\Route;
 // Auth::routes();
 
 Route::get('/', 'GuestController@home')->name('home');
+Route::get('/postcard/create', 'GuestController@postcardCreate')-> name('create.postcard');
+Route::post('/postcard/store','GuestController@postcardStore') ->name('postcard.store');
 
 Route::get('/api/postcards/list', 'ApiController@getPostcards')->name('api.postcards.list');
